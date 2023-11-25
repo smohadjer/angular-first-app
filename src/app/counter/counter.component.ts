@@ -3,7 +3,11 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-counter',
   standalone: true,
-  templateUrl: './counter.template.html'
+  template: `
+    <div>Count: {{ count }}</div>
+    <button (click)="increment()">Increment</button>{{' '}}
+    <button (click)="decrement()">Decrement</button>
+  `
 })
 
 export class CounterComponent {
