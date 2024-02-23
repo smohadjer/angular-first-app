@@ -13,10 +13,10 @@ export class HousingService {
     return json.locations ?? [];
   }
 
-  async getHousingLocationById(id: number): Promise<HousingLocation | undefined> {
-    const data = await fetch(`${this.url}/${id}`);
+  async getHousingLocationById(id: number): Promise<HousingLocation> {
+    const data = await fetch(`${this.url}?id=${id}`);
     const json = await data.json();
-    return json.locations ?? [];
+    return json[0]; //returning a location object
   }
 
   constructor() { }

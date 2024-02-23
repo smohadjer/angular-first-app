@@ -6,6 +6,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
+To get the API working you need to use Vercel CLI.
+
 live at: https://angular-first-app-saeid.vercel.app/
 
 Run on http://localhost:3000/
